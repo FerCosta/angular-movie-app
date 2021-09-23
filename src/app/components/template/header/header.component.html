@@ -1,0 +1,47 @@
+<nav class="navbar navbar-dark bg-dark fixed-top">
+
+    <button class="navbar-toggler d-lg-none" type="button">
+        
+    </button>
+  
+    <a class="navbar-brand flex-grow-1" href="#">
+        <img src="#" class="my-1 mx-2" alt="Movies">
+    </a>
+  
+    <ul class="nav text-white d-none d-lg-flex">
+           
+        <li class="nav-item d-none d-xl-flex">
+            <a class="nav-link active text-reset" routerLink="/">Home</a>
+        </li>
+        <li class="nav-item d-none d-xl-flex">
+            <a class="nav-link text-reset" href="#">Genre</a>
+        </li>
+        <li class="nav-item d-none d-xl-flex">
+            <a class="nav-link text-reset"  routerLink="/login">Login</a>
+        </li>
+       <router-outlet></router-outlet>
+       
+    </ul>
+  
+    <form class="form-inline">
+        <input class="form-control" type="search" placeholder="Search">
+    </form>
+  
+    <div class="media text-white p-2 d-none d-lg-flex">
+        <img src="#" alt="Avatar" class="mr-2">
+        <div class="media-body">
+            <p class="h6 m-0 text-uppercase">Fernanda</p>
+        </div>
+    </div>
+  
+    <ul class="list-unstyled font-weight-bold sidebar">
+        <li class="media media-avatar">
+            <img src="assets/images/avatar.jpg" alt="Avatar" class="mr-2">
+            <div class="media-body">
+                <p class="h6 m-0">Fernanda</p>
+                <small>Settings</small>
+            </div>
+        </li>
+          </ul>
+  
+  </nav>
