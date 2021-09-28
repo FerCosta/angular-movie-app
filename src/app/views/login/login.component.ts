@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { FormGroup, Validators, AbstractControl } from '@angular/forms';
+import { LoginService } from 'src/app/services/login.service';
 
 @Component({
   selector: 'app-login',
@@ -7,9 +9,40 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginComponent implements OnInit {
 
-  constructor() { }
-
-  ngOnInit(): void {
+  credentials = {
+    username: '',
+    password: ''
   }
 
+  constructor(private loginService:LoginService) { }
+  
+  ngOnInit(): void {
+   
+  }
+
+  onSubmit() {
+    //console.log('form is submitted');
+    if( (this.credentials.username != '' && this.credentials.password != '')
+      && (this.credentials.username != null) && (this.credentials.password != null) ) {
+        console.log('Sbmit sucess!!')
+
+        //token generate
+        this.loginService.generateToken(this.credentials).subscribe(
+          (response:any) => {
+            console.log(response.token);
+            this.loginService.loginUser(response.token)
+            //switch to add stuff route
+            window.location.href="/"
+          },
+          error => {
+            console.log(error);
+          }
+        )
+      } else {
+        console.log('Fields empty!!!')
+
+      }
+
+
+  }
 }

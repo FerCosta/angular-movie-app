@@ -5,7 +5,6 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
-    font-family: 'Numans', sans-serif;
     }
     
     .container{
@@ -70,6 +69,20 @@ body{
         background-color: white;
         }
         
+        .back_btn{
+            color: black;
+            background-color: #FFC312;
+            width: 100px;
+            float: right;
+            margin-top: 35px;
+            margin-right: 10px;
+            }
+            
+            .back_btn:hover{
+            color: black;
+            background-color: white;
+            }
+
         .links{
         color: white;
         }
