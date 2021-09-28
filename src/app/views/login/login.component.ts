@@ -21,17 +21,17 @@ export class LoginComponent implements OnInit {
   }
 
   onSubmit() {
-    //console.log('form is submitted');
+    //console.log('form is submitteeeed');
     if( (this.credentials.username != '' && this.credentials.password != '')
       && (this.credentials.username != null) && (this.credentials.password != null) ) {
-        console.log('Sbmit sucess!!')
+        console.log('Submit sucess!')
 
         //token generate
         this.loginService.generateToken(this.credentials).subscribe(
           (response:any) => {
             console.log(response.token);
             this.loginService.loginUser(response.token)
-            //switch to add stuff route
+            //Remember: switch to add th route
             window.location.href="/"
           },
           error => {
@@ -39,7 +39,7 @@ export class LoginComponent implements OnInit {
           }
         )
       } else {
-        console.log('Fields empty!!!')
+        console.log('Fields empty!')
 
       }
 

@@ -1,17 +1,18 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { environment } from 'src/environments/environment';
 
 @Injectable({
   providedIn: 'root'
 })
 export class LoginService {
 
-  url = 'http://localhost:8081'
+  private url = environment.url;
 
   constructor(private http: HttpClient) { }
 
-  // call server to gen token
-  generateToken(credentials:any) {
+  // call server to generate token
+  generateToken(credentials: any) {
     return this.http.post(`${this.url}/authenticate`, credentials)
   }
 
