@@ -1,0 +1,68 @@
+<!-- <div class="container">
+    
+   <div class="card" style="width: 38rem;">
+    <div class="mb-3">
+        <label for="formGroupExampleInput" class="form-label">Example label</label>
+        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input placeholder">
+      </div>
+      <div class="mb-3">
+        <label for="formGroupExampleInput2" class="form-label">Another label</label>
+        <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input placeholder">
+      </div>
+    <button (click)="createUser()">New User</button>
+</div>
+</div> -->
+
+<body>
+    <app-header></app-header>
+    <div class="container">
+        <div class="d-flex justify-content-center h-100">
+
+            <div class="card">
+
+
+                <div class="card-body">
+                    <h2 style="color: azure; margin: 20px 0 40px 0;">User Registration</h2>
+                    <form>
+                        <div class="input-group form-group">
+                            <input type="text" class="form-control" placeholder="Name" name="Name">
+                        </div>
+
+                        <div class="input-group form-group">
+                            <input type="password" class="form-control" placeholder="CPF" name="CPF">
+                        </div>
+                        <div class="input-group form-group">
+                            <input type="password" class="form-control" placeholder="Phone Number" name="Phone Number">
+                        </div>
+                        <div class="input-group form-group">
+                            <input type="password" class="form-control" placeholder="E-mail" name="E-mail">
+                        </div>
+                        <div class="input-group form-group">
+                            <input type="password" class="form-control" placeholder="Username" name="Username">
+                        </div>
+                        <div class="input-group form-group">
+                            <input type="password" class="form-control" placeholder="Password" name="password">
+                        </div>
+                        <div class="input-group form-group">
+                            <input type="password" class="form-control" placeholder="Profile" name="Profile">
+                        </div>
+                        <div class="input-group form-group">
+                            <input type="password" class="form-control" placeholder="Language" name="Language">
+                        </div>
+                        <div class="input-group form-group">
+                            <input type="password" class="form-control" placeholder="Active" name="Active">
+                        </div>
+                        <div class="input-group form-group">
+                            <input type="password" class="form-control" placeholder="Role" name="Role">
+                        </div>
+
+                        <div class="form-group">
+                            <input type="submit" value="Save" class="btn float-right login_btn">
+                            <input type="submit" value="Back" class="btn float-left back_btn" routerLink="/adm">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>

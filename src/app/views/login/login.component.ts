@@ -32,7 +32,7 @@ export class LoginComponent implements OnInit {
             console.log(response.token);
             this.loginService.loginUser(response.token)
             //Remember: switch to add th route
-            window.location.href="/"
+            window.location.href="/adm"
           },
           error => {
             console.log(error);

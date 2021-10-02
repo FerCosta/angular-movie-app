@@ -1,0 +1,152 @@
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px 0 -15px;
+    color: rgb(0, 0, 0);
+}
+
+ul {
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+/* content */
+.intro-2 {
+    background: url("https://image.freepik.com/free-photo/golden-yellow-seamless-venetian-plaster-background_24972-294.jpg")no-repeat center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* opacity: 0.5; */
+    height: 100vh;
+    overflow-y: hidden ;
+}
+.view {
+    margin-top: -56px;
+}
+.navbar {
+    z-index: 1;
+}
+/* 
+body,
+header,
+.view {
+    height: 100%;
+} */
+
+/* body {
+    background-color: #eee
+} */
+
+.card {
+    border: none;
+    border-radius: 10px
+}
+
+.c-details span {
+    font-weight: 300;
+    font-size: 13px
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+    background-color: #eee;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 39px
+}
+
+.badge span {
+    background-color: #fffbec;
+    width: 60px;
+    height: 25px;
+    padding-bottom: 3px;
+    border-radius: 5px;
+    display: flex;
+    color: #fed85d;
+    justify-content: center;
+    align-items: center
+}
+
+
+
+.text1 {
+    font-size: 14px;
+    font-weight: 600
+}
+
+.text2 {
+    color: #353b49
+}
+
+/*--------------------------------------------------------------
+# Adm initial Section
+--------------------------------------------------------------*/
+#hero {
+  width: 100%;
+  height: 50vh;
+  background: #f9f9f9;
+}
+#hero .container {
+  padding-top: 64px;
+}
+#hero h1 {
+  margin: 0;
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 56px;
+  color: #0f394c;
+  text-transform: uppercase;
+}
+#hero h2 {
+  color: #1c698c;
+  margin: 10px 0 0 0;
+  font-size: 20px;
+}
+#hero .hero-img{
+    width: 50%;
+}
+#hero .btn-get-started {
+  font-family: "Dosis", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 28px;
+  border-radius: 3px;
+  transition: 0.5s;
+  margin-top: 25px;
+  color: #fff;
+  background: #FFC312;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+#hero .btn-get-started:hover {
+  background: #e7b00b;
+}
+@media (max-width: 991px) {
+  #hero {
+    height: 100vh;
+    text-align: center;
+  }
+  #hero .hero-img img {
+    width: 50%;
+  }
+}
+@media (max-width: 768px) {
+  #hero h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  #hero h2 {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  #hero .hero-img img {
+    width: 80%;
+  }
+}

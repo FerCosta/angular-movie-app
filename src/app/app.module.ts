@@ -11,6 +11,9 @@ import { HeaderComponent } from './components/template/header/header.component';
 import { HomeComponent } from './views/home/home.component';
 import { LoginComponent } from './views/login/login.component';
 import { MovieListComponent } from './views/home/movie-list/movie-list.component';
+import { AdmComponent } from './views/adm/adm.component';
+import { MovieListItemComponent } from './views/home/movie-list-item/movie-list-item.component';
+import { UserCreateComponent } from './views/adm/user-create/user-create.component';
 
 
 
@@ -21,6 +24,9 @@ import { MovieListComponent } from './views/home/movie-list/movie-list.component
     HomeComponent,
     LoginComponent,
     MovieListComponent,
+    AdmComponent,
+    MovieListItemComponent,
+    UserCreateComponent,
 
   ],
   imports: [

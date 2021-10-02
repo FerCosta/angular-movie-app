@@ -1,51 +1,48 @@
+<div class="container" style="padding-top: 80px;">
 <nav class="navbar navbar-dark bg-dark fixed-top">
 
     <button class="navbar-toggler d-lg-none" type="button">
-        
+
     </button>
-  
-    <a class="navbar-brand flex-grow-1" >
-       
+
+    <a routerLink="/" class="navbar-brand flex-grow-1">
+
         <h3 class="title">Movies</h3>
     </a>
-  
+
     <ul class="nav text-white d-none d-lg-flex">
-           
+
         <li class="nav-item d-none d-xl-flex">
-            <a class="nav-link active text-reset" routerLink="/">Add User</a>
+            <a *ngIf="loggedIn" class="nav-link active text-reset" routerLink="/user/create">Add User</a>
         </li>
         <li class="nav-item d-none d-xl-flex">
-            <a class="nav-link text-reset" href="#">Add Movie</a>
+            <a *ngIf="loggedIn" class="nav-link text-reset" href="#">Add Movie</a>
         </li>
         <li class="nav-item d-none d-xl-flex">
-            <a class="nav-link text-reset" href="#">Add Genre</a>
+            <a *ngIf="loggedIn" class="nav-link text-reset" href="#">Add Genre</a>
         </li>
         <li class="nav-item d-none d-xl-flex">
-            <a class="nav-link text-reset"  routerLink="/login">Login</a>
+            <a *ngIf="loggedIn" class="nav-link text-reset" routerLink="/adm">Adm</a>
         </li>
-       
-       
+
     </ul>
-  
+
     <form class="form-inline">
         <input class="form-control" type="search" placeholder="Search">
     </form>
-  
+
     <div class="media text-white p-2 d-none d-lg-flex">
+
+        <div class="media-body" style="margin: 0 15px 0 15px;">
+
+            <a *ngIf="!loggedIn" class="nav-link text-reset" routerLink="/login">login</a>
+
+            <p *ngIf="loggedIn" class="h6 m-0 text-uppercase">Fernanda</p>
+           
+            <a *ngIf="loggedIn" (click)="logoutUser()" class="nav-link text-reset" style="cursor: pointer;">logout</a>
         
-        <div class="media-body">
-            <p class="h6 m-0 text-uppercase">Fernanda</p>
         </div>
+    
     </div>
-  
-    <ul class="list-unstyled font-weight-bold sidebar">
-        <li class="media media-avatar">
-            
-            <div class="media-body">
-                <p class="h6 m-0">Fernanda</p>
-                <small>Settings</small>
-            </div>
-        </li>
-          </ul>
-  
-  </nav>
+</nav>
+</div>

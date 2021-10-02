@@ -1,1 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
+.movies-list{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+app-movies-list-item{
+    display: flex;
+    width: 200px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 20px 0 0 20px;
+}
