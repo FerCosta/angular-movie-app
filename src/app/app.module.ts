@@ -1,3 +1,4 @@
+import { MovieService } from 'src/app/services/movie.service';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
@@ -35,7 +36,7 @@ import { UserCreateComponent } from './views/adm/user-create/user-create.compone
     FormsModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [MovieService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,19 +1,4 @@
 .card{
-    cursor: pointer;
-    
+    border: none;
+ 
 }
-
-.card-body{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    font-family: "Signika", arial, sans-serif;
-    margin: 0 5px 50px;
-    width: 350px;
-}
-
-/* .options{
-    position: absolute;
-    top: 5px;
-    right: 5px;
-} */
