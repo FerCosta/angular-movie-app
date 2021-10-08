@@ -15,6 +15,11 @@ import { MovieListComponent } from './views/home/movie-list/movie-list.component
 import { AdmComponent } from './views/adm/adm.component';
 import { MovieListItemComponent } from './views/home/movie-list-item/movie-list-item.component';
 import { UserCreateComponent } from './views/adm/user-create/user-create.component';
+import { AdmUserComponent } from './views/adm/adm-user/adm-user.component';
+import { AdmMovieComponent } from './views/adm/adm-movie/adm-movie.component';
+import { AdmGenreComponent } from './views/adm/adm-genre/adm-genre.component';
+import { UserReadComponent } from './views/adm/user-read/user-read.component';
+import { UserUpdateComponent } from './views/adm/user-update/user-update.component';
 
 
 
@@ -28,6 +33,11 @@ import { UserCreateComponent } from './views/adm/user-create/user-create.compone
     AdmComponent,
     MovieListItemComponent,
     UserCreateComponent,
+    AdmUserComponent,
+    AdmMovieComponent,
+    AdmGenreComponent,
+    UserReadComponent,
+    UserUpdateComponent,
 
   ],
   imports: [
