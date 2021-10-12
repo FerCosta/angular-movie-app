@@ -1,3 +1,4 @@
+import { UserDeleteComponent } from './views/adm/user-delete/user-delete.component';
 import { UserReadComponent } from './views/adm/user-read/user-read.component';
 import { AdmGenreComponent } from './views/adm/adm-genre/adm-genre.component';
 import { AdmMovieComponent } from './views/adm/adm-movie/adm-movie.component';
@@ -20,6 +21,7 @@ const routes: Routes = [
   { path: "user/create", component: UserCreateComponent, canActivate: [AuthGuard] },
   { path: "user/read", component: UserReadComponent, canActivate: [AuthGuard] },
   { path: "user/update/:id", component: UserUpdateComponent, canActivate: [AuthGuard] },
+  { path: "user/delete/:id", component: UserDeleteComponent, canActivate: [AuthGuard] },
   { path: "adm/movie", component: AdmMovieComponent, canActivate: [AuthGuard] },
   { path: "adm/genre", component:AdmGenreComponent, canActivate: [AuthGuard] }
 ];

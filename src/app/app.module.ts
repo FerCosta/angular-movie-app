@@ -20,6 +20,7 @@ import { AdmMovieComponent } from './views/adm/adm-movie/adm-movie.component';
 import { AdmGenreComponent } from './views/adm/adm-genre/adm-genre.component';
 import { UserReadComponent } from './views/adm/user-read/user-read.component';
 import { UserUpdateComponent } from './views/adm/user-update/user-update.component';
+import { UserDeleteComponent } from './views/adm/user-delete/user-delete.component';
 
 
 
@@ -38,6 +39,7 @@ import { UserUpdateComponent } from './views/adm/user-update/user-update.compone
     AdmGenreComponent,
     UserReadComponent,
     UserUpdateComponent,
+    UserDeleteComponent,
 
   ],
   imports: [
