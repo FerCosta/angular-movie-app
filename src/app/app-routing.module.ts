@@ -16,6 +16,10 @@ import { MovieCreateComponent } from './views/adm/movie-create/movie-create.comp
 import { MovieReadComponent } from './views/adm/movie-read/movie-read.component';
 import { MovieUpdateComponent } from './views/adm/movie-update/movie-update.component';
 import { MovieDeleteComponent } from './views/adm/movie-delete/movie-delete.component';
+import { GenreCreateComponent } from './views/adm/genre-create/genre-create.component';
+import { GenreReadComponent } from './views/adm/genre-read/genre-read.component';
+import { GenreUpdateComponent } from './views/adm/genre-update/genre-update.component';
+import { GenreDeleteComponent } from './views/adm/genre-delete/genre-delete.component';
 
 const routes: Routes = [
   { path: "", component: HomeComponent },
@@ -31,7 +35,11 @@ const routes: Routes = [
   { path: "movie/read", component: MovieReadComponent, canActivate: [AuthGuard] },
   { path: "movie/update/:id", component: MovieUpdateComponent, canActivate: [AuthGuard] },
   { path: "movie/delete/:id", component: MovieDeleteComponent, canActivate: [AuthGuard] },
-  { path: "adm/genre", component:AdmGenreComponent, canActivate: [AuthGuard] }
+  { path: "adm/genre", component:AdmGenreComponent, canActivate: [AuthGuard] },
+  { path: "genre/create", component: GenreCreateComponent, canActivate: [AuthGuard] },
+  { path: "genre/read", component: GenreReadComponent, canActivate: [AuthGuard] },
+  { path: "genre/update/:id", component: GenreUpdateComponent, canActivate: [AuthGuard] },
+  { path: "genre/delete/:id", component: GenreDeleteComponent, canActivate: [AuthGuard] },
 ];
 
 @NgModule({

@@ -25,6 +25,10 @@ import { MovieDeleteComponent } from './views/adm/movie-delete/movie-delete.comp
 import { MovieCreateComponent } from './views/adm/movie-create/movie-create.component';
 import { MovieReadComponent } from './views/adm/movie-read/movie-read.component';
 import { MovieUpdateComponent } from './views/adm/movie-update/movie-update.component';
+import { GenreReadComponent } from './views/adm/genre-read/genre-read.component';
+import { GenreCreateComponent } from './views/adm/genre-create/genre-create.component';
+import { GenreUpdateComponent } from './views/adm/genre-update/genre-update.component';
+import { GenreDeleteComponent } from './views/adm/genre-delete/genre-delete.component';
 
 
 
@@ -48,6 +52,10 @@ import { MovieUpdateComponent } from './views/adm/movie-update/movie-update.comp
     MovieCreateComponent,
     MovieReadComponent,
     MovieUpdateComponent,
+    GenreReadComponent,
+    GenreCreateComponent,
+    GenreUpdateComponent,
+    GenreDeleteComponent,
     
 
   ],

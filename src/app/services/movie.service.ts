@@ -12,13 +12,6 @@ export class MovieService {
 
   private url = environment.url;
 
-
-  // httpOptions = {
-  //   headers: new HttpHeaders({
-  //     'Content-Type': 'application/json'
-  //   })
-  // }
-
   constructor(private http: HttpClient) { }
 
   list() {
@@ -33,19 +26,19 @@ export class MovieService {
     return this.http.get<Movie[]>(`${this.url}/listall-movie/`)
   }
 
-  // readById(id: string): Observable<Movie> {
-  //   const url = `${this.url}/list-movie/${id}`
-  //   return this.http.get<Movie>(url)
-  // }
+  readById(id: string): Observable<Movie> {
+    const url = `${this.url}/list-movie/${id}`
+    return this.http.get<Movie>(url)
+  }
 
-  // update(movie: Movie): Observable<Movie> {
-  //   const url = `${this.url}/edit-movie/${movie.movieId}`
-  //   return this.http.put<Movie>(url, movie)
-  // }
+  update(movie: Movie): Observable<Movie> {
+    const url = `${this.url}/edit-movie/${movie.movieId}`
+    return this.http.put<Movie>(url, movie)
+  }
 
-  // delete(movie: Movie): Observable<Movie> {
-  //   const url = `${this.url}/delete-movie/${movie.movieId}`
-  //   return this.http.put<Movie>(url, movie)
-  // }
+  delete(movie: Movie): Observable<Movie> {
+    const url = `${this.url}/delete-movie/${movie.movieId}`
+    return this.http.put<Movie>(url, movie)
+  }
 
 }

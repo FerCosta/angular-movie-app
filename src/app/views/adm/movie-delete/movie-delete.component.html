@@ -1,1 +1,47 @@
-<p>movie-delete works!</p>
+<body>
+    <app-header></app-header>
+    <div class="container">
+        <div class="d-flex justify-content-center h-100">
+
+            <div class="card">
+
+
+                <div class="card-body">
+                    <h2 style="color: azure; margin: 20px 0 40px 0;">Movie Delete</h2>
+                    <form>
+                        <div class="input-group form-group">
+                            <input type="text" class="form-control" [(ngModel)]="movie.title" disabled placeholder="Title" name="Title">
+                        </div>
+
+                        <div class="input-group form-group">
+                            <input type="text" class="form-control" [(ngModel)]="movie.synopsis" placeholder="Synopsis" name="Synopsis">
+                        </div>
+                        <div class="input-group form-group">
+                            <input type="text" class="form-control" [(ngModel)]="movie.genre.genreId" placeholder="Genre" name="Genre">
+                       
+                        <div class="input-group form-group">
+                            <input type="text" class="form-control" [(ngModel)]="movie.image" placeholder="Image" name="Image">
+                        </div>
+                        <div class="input-group form-group">
+                            <input type="text" class="form-control" [(ngModel)]="movie.releaseDate" placeholder="Release Date" name="Release Date">
+                        </div>
+                        <div class="input-group form-group">
+                            <input type="text" class="form-control" [(ngModel)]="movie.time" placeholder="Time" name="Time">
+                        </div>
+                        <div class="input-group form-group">
+                            <input type="text" class="form-control" [(ngModel)]="movie.language.languageId" placeholder="Language" name="Language">
+                        </div>
+                         </div>
+                       
+                        
+
+                        <div class="form-group">
+                            <input type="submit" value="Save" class="btn float-right login_btn" (click)="deleteMovie()" routerLink="/adm/movie">
+                            <input type="submit" value="Back" class="btn float-left back_btn" routerLink="/adm">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>

@@ -1,0 +1,33 @@
+<body>
+    <app-header></app-header>
+    <div class="container">
+        <div class="d-flex justify-content-center h-100">
+
+            <div class="card">
+
+
+                <div class="card-body">
+                    <h2 style="color: azure; margin: 20px 0 40px 0;">Genre Update</h2>
+                    <form>
+                        <div class="input-group form-group">
+                            <input type="text" class="form-control" [(ngModel)]="genre.name" disabled placeholder="Name" name="Name">
+                        </div>
+
+                        <div class="input-group form-group">
+                            <input type="text" class="form-control" [(ngModel)]="genre.language.languageId" disabled placeholder="Language" name="Language">
+                        </div>
+                        <div class="input-group form-group">
+                            <input type="text" class="form-control" [(ngModel)]="genre.active" disabled placeholder="Active" name="Active">
+                        </div>
+                       
+
+                        <div class="form-group">
+                            <input type="submit" value="Delete" class="btn float-right login_btn" (click)="deleteGenre()" routerLink="/adm/genre">
+                            <input type="submit" value="Back" class="btn float-left back_btn" routerLink="/adm">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
