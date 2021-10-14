@@ -1,14 +1,15 @@
 import { Genre } from "./genre.model";
-import { Language2 } from "./language2.model";
+import { Language } from "./language.model";
+
 
 export interface Movie {
-    movieId: number;
+    movieId?: number;
         title: string;
         synopsis: string;
         genre: Genre;
         image: string;
         releaseDate: number;
         time: string;
-        language: Language2;
+        language: Language;
         active: boolean;
 }

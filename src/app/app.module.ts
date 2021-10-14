@@ -21,6 +21,10 @@ import { AdmGenreComponent } from './views/adm/adm-genre/adm-genre.component';
 import { UserReadComponent } from './views/adm/user-read/user-read.component';
 import { UserUpdateComponent } from './views/adm/user-update/user-update.component';
 import { UserDeleteComponent } from './views/adm/user-delete/user-delete.component';
+import { MovieDeleteComponent } from './views/adm/movie-delete/movie-delete.component';
+import { MovieCreateComponent } from './views/adm/movie-create/movie-create.component';
+import { MovieReadComponent } from './views/adm/movie-read/movie-read.component';
+import { MovieUpdateComponent } from './views/adm/movie-update/movie-update.component';
 
 
 
@@ -40,6 +44,11 @@ import { UserDeleteComponent } from './views/adm/user-delete/user-delete.compone
     UserReadComponent,
     UserUpdateComponent,
     UserDeleteComponent,
+    MovieDeleteComponent,
+    MovieCreateComponent,
+    MovieReadComponent,
+    MovieUpdateComponent,
+    
 
   ],
   imports: [

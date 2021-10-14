@@ -12,6 +12,10 @@ import { AdmComponent } from './views/adm/adm.component';
 import { HomeComponent } from './views/home/home.component';
 import { LoginComponent } from './views/login/login.component';
 import { UserUpdateComponent } from './views/adm/user-update/user-update.component';
+import { MovieCreateComponent } from './views/adm/movie-create/movie-create.component';
+import { MovieReadComponent } from './views/adm/movie-read/movie-read.component';
+import { MovieUpdateComponent } from './views/adm/movie-update/movie-update.component';
+import { MovieDeleteComponent } from './views/adm/movie-delete/movie-delete.component';
 
 const routes: Routes = [
   { path: "", component: HomeComponent },
@@ -23,6 +27,10 @@ const routes: Routes = [
   { path: "user/update/:id", component: UserUpdateComponent, canActivate: [AuthGuard] },
   { path: "user/delete/:id", component: UserDeleteComponent, canActivate: [AuthGuard] },
   { path: "adm/movie", component: AdmMovieComponent, canActivate: [AuthGuard] },
+  { path: "movie/create", component: MovieCreateComponent, canActivate: [AuthGuard] },
+  { path: "movie/read", component: MovieReadComponent, canActivate: [AuthGuard] },
+  { path: "movie/update/:id", component: MovieUpdateComponent, canActivate: [AuthGuard] },
+  { path: "movie/delete/:id", component: MovieDeleteComponent, canActivate: [AuthGuard] },
   { path: "adm/genre", component:AdmGenreComponent, canActivate: [AuthGuard] }
 ];
 
