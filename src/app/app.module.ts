@@ -1,3 +1,4 @@
+import { MovieFilterPipe } from './views/home/movie-list-item/movie-filter.pipe';
 import { MovieService } from 'src/app/services/movie.service';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
@@ -56,7 +57,7 @@ import { GenreDeleteComponent } from './views/adm/genre-delete/genre-delete.comp
     GenreCreateComponent,
     GenreUpdateComponent,
     GenreDeleteComponent,
-    
+    MovieFilterPipe
 
   ],
   imports: [

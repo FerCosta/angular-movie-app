@@ -8,7 +8,8 @@ import { MovieService } from 'src/app/services/movie.service';
 })
 export class MovieListItemComponent implements OnInit {
 
-  movie: Array<any>;
+  movie: Array<any>
+  search: string
 
   constructor(public movieService: MovieService) { }
 
@@ -17,7 +18,7 @@ export class MovieListItemComponent implements OnInit {
   }
 
   list() {
-    this.movieService.list().subscribe(data => this.movie = data);
+    this.movieService.list().subscribe(data => this.movie = data)
   }
 
 }
