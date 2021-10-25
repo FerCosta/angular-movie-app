@@ -3,13 +3,234 @@
     flex-wrap: wrap;
 }
 
-
-app-movies-list-item{
+/* app-movies-list-item{
     display: flex;
     width: 200px;
     border-radius: 10px;
     overflow: hidden;
     margin: 20px 0 0 20px;
+} */
+
+.card[_ngcontent-pvn-c59] {
+    border: var(--card-border) !important;
+    border-radius: 10px;
+    
 }
 
 
+.input {
+    font-size: medium;
+}
+
+.input-group-prepend span{
+width: 50px;
+height: 100%;
+background-color: #FFC312;
+color: black;
+border:0 !important;
+}
+    
+    
+input:focus{
+outline: 0 0 0 0  !important;
+box-shadow: 0 0 0 0 !important;
+
+}
+        
+.login_btn{
+color: var(--text-color);
+background-color: var(--button-color);
+width: 100px;
+float: right;
+margin-top: 35px;
+}
+
+.login_btn:hover{
+color: black;
+background-color: var(--button-hover);
+}
+
+.back_btn{
+color: var(--text-color);
+background-color: var(--button-color);
+width: 100px;
+float: right;
+margin-top: 35px;
+margin-right: 10px;
+}
+
+.back_btn:hover{
+color: black;
+background-color: var(--button-hover);
+}
+
+.links{
+color: var(--link-color);
+
+}
+
+.links a{
+margin-left: 4px;
+/* color: var(--link-color); */
+color: var(--text-color);
+}
+
+.nav-link, h5,h6,p,h3, th, td {
+    color: var(--text-color);
+  
+}
+
+h6, th, td {
+    font-size: medium;
+}
+
+h6:hover {
+    color: var(--link-color);
+}
+
+.form-control::placeholder {
+    font-size: 1.2rem;
+    color: var(--text-color);
+}
+
+.form-control:focus{
+    font-size: 1.3rem;
+    color:var(--text-color);
+}
+
+.input-group>.form-control:focus, .input-group>.form-select:focus {
+    z-index: 3;
+    /* color: #f5f5f5ef; */
+}
+
+.card-body, img {
+border: var(--card-border);
+}
+
+.nav-link:hover, .btn-danger:hover, .btn-primary:hover{
+    border: var(--link-border);
+    background-color: #1a1a1a;
+}
+
+.title {
+    font-size: 28px;
+}
+
+.title-itens {
+    text-decoration: none;
+    color: #f5f5f5;
+}
+
+.title-itens:hover {   
+    color: var(--link-color);
+    background-color: #1a1a1a;
+    border: var(--link-border);
+   
+}
+
+.container {
+    background-color: var(--background-color);
+}
+
+section {
+    border: var(--card-border) !important;
+}
+
+.form-control:focus {
+    background-color: var(--background-color);
+    border: var(--link-border);
+}
+
+.body {
+    /* background-image: url('https://getwallpapers.com/wallpaper/full/b/4/8/185436.jpg'); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    overflow-y: hidden ;   
+    
+}
+
+body, .body, .card, .container,  input, icon{
+    background-color: var(--background-color); 
+}
+
+.light-contrast {
+    --background-color: #fff;
+    --text-color: #1a1a1a;
+    --box-color: #fff;
+    --button-color: #FFC312;
+    --button-hover: #f5f5f5;
+    --icon-bg: #eee;
+    --btn-edit: #0d6efd;;
+    --btn-delete: #dc3545;
+}
+
+.high-contrast {
+    --background-color: rgb(0, 0, 0);
+    --text-color: #f5f5f5;
+    --box-color: rgb(0, 0, 0);
+    --button-color: rgb(0, 0, 0);
+    --button-hover: #ffff00;
+    --link-color: #ff0;
+    --icon-bg: rgb(0, 0, 0); 
+    --card-border: 1px solid white;
+    --link-border: 1px solid #ff0;
+    --btn-edit: white;
+    --btn-delete: white;
+    
+
+} 
+
+.col-md-4{
+    border: var(--card-border);
+}
+
+.btn-primary {
+border-color: var(--btn-edit);
+}
+
+.btn-danger {
+    border-color: var(--btn-delete);
+}
+
+.high-contrast button,
+.high-contrast body ,
+.high-contrast input,
+.high-contrast .body,
+.high-contrast section,
+.high-contrast .div{
+    background-color: rgb(0, 0, 0);
+}
+
+.nav>li>a:hover, .nav>li>a:focus {
+    text-decoration: none;
+    background-color:black !important;
+    color: #ff0;
+}
+
+.login_btn{
+    color: var(--text-color);
+    background-color: var(--button-color);
+    width: 127px;
+    float: right;
+    margin: 35px 53px 0 0;
+    font-size: small;
+    border: var(--card-border);
+    }
+    
+    .login_btn:hover, .back_btn:hover{
+    color: var(--link-color);
+    background-color: var(--icon-bg);
+    border: var(--link-border);
+    }
+    
+    .back_btn{
+        color: var(--text-color);
+        background-color: var(--button-color);
+        border: var(--card-border);
+        width: 127px;
+        float: right;
+        margin-top: 35px;
+        margin-right: 10px;
+        font-size: small;
+        }

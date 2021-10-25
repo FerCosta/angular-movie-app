@@ -1,20 +1,21 @@
-<div class="container mx-auto mt-4">
-  <form class="form-inline" style="margin-top: 7%; width: 20%;">
-    <input class="form-control" type="search" placeholder="Search" [(ngModel)]="search" name="search"/>   
-</form>
-<div class="row">
- 
-  <div class="col-md-4" style="margin-top: 30px;" *ngFor="let m of movie | movieFilter: search">
 
-    <div class="card" style="width: 18rem;" >
+  <form class="form-inline">
+    <input class="form-control" type="search" placeholder="Search" [(ngModel)]="search" name="search" />
+  </form>
+
+
+<div class="row">
+
+  <div class="col-md-3" style="margin-top: 3%" *ngFor="let m of movie | movieFilter: search">
+
+    <div class="card" style="width: 25rem;">
       <img src={{m.image}} class="card-img-top" alt={{m.title}}>
 
       <div class="card-body">
         <h5 class="card-title"> {{m.title}}</h5>
         <h6 class="card-subtitle mb-2 text-muted">{{m.time}}</h6>
-        <p class="card-text">{{m.synopsis}}</p>
+        <p class="card-text">{{m.genre.name}}</p>
       </div>
     </div>
   </div>
-</div>
 </div>

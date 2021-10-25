@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css?family=Numans');
+/* @import url('https://fonts.googleapis.com/css?family=Numans'); */
 
-body{
+.body{
     background-image: url('https://getwallpapers.com/wallpaper/full/8/f/a/92318.jpg');
     background-size: cover;
     background-repeat: no-repeat;
@@ -18,35 +18,20 @@ body{
         width: 400px;
         background-color: rgba(0,0,0,0.5) !important;
         }
-        
-        /* .social_icon span{
-        font-size: 60px;
-        margin-left: 10px;
-        color: #FFC312;
-        }
-        
-        .social_icon span:hover{
-        color: white;
-        cursor: pointer;
-        }
-        
-       
-        .social_icon{
-        position: absolute;
-        right: 20px;
-        top: -45px;
-        } */
-        
+                
         .input-group {
-            margin-top: 38px;
+            margin: 38px 0 0 60px;
+            width: 70%;
+
         }
 
         .input-group-prepend span{
-        width: 50px;
+        width: 30px;
         height: 100%;
-        background-color: #FFC312;
+        /* background-color: #FFC312; */
+        background-color: var(--button-color);
         color: black;
-        border:0 !important;
+        border:var(--card-border)!important;
         }
         
         
@@ -56,32 +41,33 @@ body{
        
         }
                
-        .login_btn{
-        color: black;
-        background-color: #FFC312;
-        width: 100px;
+        /* .login_btn{
+        color: var(--text-color);
+        background-color: var(--button-color);
+        width: 127px;
         float: right;
-        margin-top: 35px;
+        margin: 35px 53px 0 0;
+        font-size: small;
+        border: var(--card-border);
         }
         
-        .login_btn:hover{
-        color: black;
-        background-color: white;
+        .login_btn:hover, .back_btn:hover{
+        color: var(--link-color);
+        background-color: var(--icon-bg);
+        border: var(--link-border);
         }
         
         .back_btn{
-            color: black;
-            background-color: #FFC312;
-            width: 100px;
+            color: var(--text-color);
+            background-color: var(--button-color);
+            border: var(--card-border);
+            width: 127px;
             float: right;
             margin-top: 35px;
             margin-right: 10px;
-            }
+            font-size: small;
+            } */
             
-            .back_btn:hover{
-            color: black;
-            background-color: white;
-            }
 
         .links{
         color: white;
@@ -89,4 +75,16 @@ body{
         
         .links a{
         margin-left: 4px;
+        }
+
+        i {
+            color: var(--text-color);
+        }
+
+        .input-group-prepend[_ngcontent-jhn-c63] span[_ngcontent-jhn-c63]  {
+            color: var(--button-color);
+        }
+
+        span {
+            border: var(--card-border);
         }

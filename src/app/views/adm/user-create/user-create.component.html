@@ -1,7 +1,6 @@
-
-<body>
+<div class="body">
     <app-header></app-header>
-   <div class="container">
+    <div class="container">
         <div class=" d-flex justify-content-center">
 
             <div class="card">
@@ -11,29 +10,36 @@
                     <h2 style="color: azure; margin: 20px 0 40px 0;">User Registration</h2>
                     <form>
                         <div class="input-group form-group">
-                            <input type="text" class="form-control" [(ngModel)]="user.name" placeholder="Name" name="Name">
+                            <input type="text" class="form-control" [(ngModel)]="user.name" placeholder="Name"
+                                name="Name">
                         </div>
 
                         <div class="input-group form-group">
                             <input type="text" class="form-control" [(ngModel)]="user.cpf" placeholder="CPF" name="CPF">
                         </div>
                         <div class="input-group form-group">
-                            <input type="text" class="form-control" [(ngModel)]="user.phoneNumber" placeholder="Phone Number" name="Phone Number">
+                            <input type="text" class="form-control" [(ngModel)]="user.phoneNumber"
+                                placeholder="Phone Number" name="Phone Number">
                         </div>
                         <div class="input-group form-group">
-                            <input type="text" class="form-control" [(ngModel)]="user.email" placeholder="E-mail" name="E-mail">
+                            <input type="text" class="form-control" [(ngModel)]="user.email" placeholder="E-mail"
+                                name="E-mail">
                         </div>
                         <div class="input-group form-group">
-                            <input type="text" class="form-control" [(ngModel)]="user.userName" placeholder="Username" name="Username">
+                            <input type="text" class="form-control" [(ngModel)]="user.userName" placeholder="Username"
+                                name="Username">
                         </div>
                         <div class="input-group form-group">
-                            <input type="password" class="form-control" [(ngModel)]="user.password" placeholder="Password" name="password">
+                            <input type="password" class="form-control" [(ngModel)]="user.password"
+                                placeholder="Password" name="password">
                         </div>
                         <div class="input-group form-group">
-                            <input type="text" class="form-control" [(ngModel)]="user.profile" placeholder="Profile" name="Profile">
+                            <input type="text" class="form-control" [(ngModel)]="user.profile" placeholder="Profile"
+                                name="Profile">
                         </div>
                         <div class="input-group form-group">
-                            <input type="text" class="form-control" [(ngModel)]="user.language.languageId" placeholder="Language" name="Language">
+                            <input type="text" class="form-control" [(ngModel)]="user.language.languageId"
+                                placeholder="Language" name="Language">
                         </div>
                         <!-- <div class="input-group form-group">
                             <input type="text" class="form-control" [(ngModel)]="user.active" placeholder="Active" name="Active">
@@ -43,7 +49,8 @@
                         </div> -->
 
                         <div class="form-group">
-                            <input type="submit" value="Save" class="btn float-right login_btn" (click)="createUser()" routerLink="/adm/user">
+                            <input type="submit" value="Save" class="btn float-right login_btn" (click)="createUser()"
+                                routerLink="/adm/user">
                             <input type="submit" value="Back" class="btn float-left back_btn" routerLink="/adm">
                         </div>
                     </form>
@@ -51,4 +58,4 @@
             </div>
         </div>
     </div>
-</body>
+</div>

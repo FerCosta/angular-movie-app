@@ -10,6 +10,7 @@ export class MovieListItemComponent implements OnInit {
 
   movie: Array<any>
   search: string
+  
 
   constructor(public movieService: MovieService) { }
 

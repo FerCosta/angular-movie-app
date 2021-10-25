@@ -30,6 +30,7 @@ import { GenreReadComponent } from './views/adm/genre-read/genre-read.component'
 import { GenreCreateComponent } from './views/adm/genre-create/genre-create.component';
 import { GenreUpdateComponent } from './views/adm/genre-update/genre-update.component';
 import { GenreDeleteComponent } from './views/adm/genre-delete/genre-delete.component';
+import { AccBarComponent } from './components/template/acc-bar/acc-bar.component';
 
 
 
@@ -57,7 +58,8 @@ import { GenreDeleteComponent } from './views/adm/genre-delete/genre-delete.comp
     GenreCreateComponent,
     GenreUpdateComponent,
     GenreDeleteComponent,
-    MovieFilterPipe
+    MovieFilterPipe,
+    AccBarComponent
 
   ],
   imports: [

@@ -22,9 +22,11 @@ ul {
     height: 100vh;
     overflow-y: hidden ;
 }
+
 .view {
     margin-top: -56px;
 }
+
 .navbar {
     z-index: 1;
 }
@@ -54,7 +56,7 @@ header,
 .icon {
     width: 50px;
     height: 50px;
-    background-color: #eee;
+    background-color: var(--icon-bg);
     border-radius: 15px;
     display: flex;
     align-items: center;
@@ -92,21 +94,23 @@ header,
 #hero {
   width: 100%;
   height: 50vh;
-  background: #f9f9f9;
+  background:  var(--background-color);
 }
 #hero .container {
-  padding-top: 64px;
+  padding-top: 34px;
+  
 }
 #hero h1 {
   margin: 0;
   font-size: 42px;
   font-weight: 700;
   line-height: 56px;
-  color: #0f394c;
+  /* color: #0f394c; */
+  color: var(--text-color);
   text-transform: uppercase;
 }
 #hero h2 {
-  color: #1c698c;
+  color: var(--text-color);
   margin: 10px 0 0 0;
   font-size: 20px;
 }
@@ -120,16 +124,22 @@ header,
   letter-spacing: 1px;
   display: inline-block;
   padding: 8px 28px;
+  border: var(--card-border);
   border-radius: 3px;
   transition: 0.5s;
   margin-top: 25px;
   color: #fff;
-  background: #FFC312;
+  /* background: #FFC312; */
+  background: var(--button-color);
   text-transform: uppercase;
   text-decoration: none;
 }
 #hero .btn-get-started:hover {
-  background: #e7b00b;
+  /* background: #e7b00b; */
+color: var(--link-color);
+border: var(--link-border);
+
+  
 }
 @media (max-width: 991px) {
   #hero {

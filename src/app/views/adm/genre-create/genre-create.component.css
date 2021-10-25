@@ -1,25 +1,16 @@
-
-body{
-    background-image: url('https://getwallpapers.com/wallpaper/full/b/4/8/185436.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 100vh;
-    overflow-y: hidden ;
-    }
-    
     .container{
         height: 100%;
         align-content: center;
         }
         
         .card{
-        height: 55%;
-        margin-top: 100px;
+        height: 43%;
+        margin-top: 50px;
         width: 400px;
-        background-color: rgba(0,0,0,0.5) !important;
+        background-color: rgba(0,0,0,0.8) !important;
         }
         
-        .input-group {
+        /* .input-group {
             margin-top: 8px;
         }
 
@@ -71,4 +62,4 @@ body{
         
         .links a{
         margin-left: 4px;
-        }
+        } */

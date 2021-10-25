@@ -1,0 +1,19 @@
+<nav class="nav nav-bar" style="font-size: medium;height: 5rem; background-color: var(--background-color);">
+    <li class="nav-item">
+        <a class="nav-link active" style="padding-left: 5rem;" aria-current="page" href="#">Skip to content</a>
+    </li>
+    <li>
+        <a class="nav-link" href="#">Accessibility Shortcuts</a>
+    </li>
+    <li>
+        <a class="nav-link" (click)="getFocus()">Menu</a>
+    </li>
+
+    <li class="nav-item">
+        <a class="nav-link" (click)="switchMode()">{{ mode === 'light-contrast' ? 'Activate High contrast' : 'Deactivate High constrast' }}</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#">Plus font</a>
+    </li>
+
+</nav>

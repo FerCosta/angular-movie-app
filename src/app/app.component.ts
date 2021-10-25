@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { DOCUMENT } from '@angular/common';
+import { Component, Inject, OnInit, Renderer2 } from '@angular/core';
+import { PRIMARY_OUTLET } from '@angular/router';
 
 
 @Component({
@@ -6,13 +8,17 @@ import { Component } from '@angular/core';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
+export class AppComponent{
   
+  
+
   constructor() { }
 
   ngOnInit(): void {
-    
+   
   }
+
+ 
 
 }
 
