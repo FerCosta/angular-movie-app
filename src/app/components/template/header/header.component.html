@@ -1,42 +1,38 @@
-
-<nav class="navbar navbar-dark bg-dark " >
-
-    <!-- <button class="navbar-toggler d-lg-none" type="button">
-
-    </button> -->
+<nav class="navbar navbar-dark bg-dark">
 
     <a routerLink="/" class="navbar-brand flex-grow-1">
 
         <h3 class="title">Movies</h3>
     </a>
 
-    <ul class="nav  d-none d-lg-flex " style="font-size: medium;">
+    <ul class="nav  d-none d-lg-flex " style="font-size: 1em;">
 
-        <li class="nav-item d-none d-xl-flex" >
-            
-            <a  *ngIf="loggedIn" id="menu" class="title-itens" routerLink="/user/create">Add User</a>
+        <li class="nav-item d-none d-xl-flex">
+
+            <a *ngIf="loggedIn" id="menu" class="title-itens" title="Add user" routerLink="/user/create">Add User</a>
         </li>
         <li class="nav-item d-none d-xl-flex">
-            <a *ngIf="loggedIn" class="title-itens" routerLink="/movie/create">Add Movie</a>
+            <a *ngIf="loggedIn" class="title-itens"  title="Add movie" routerLink="/movie/create">Add Movie</a>
         </li>
         <li class="nav-item d-none d-xl-flex">
-            <a *ngIf="loggedIn" class="title-itens" routerLink="/genre/create">Add Genre</a>
+            <a *ngIf="loggedIn" class="title-itens" title="Add genre" routerLink="/genre/create">Add Genre</a>
         </li>
         <li class="nav-item d-none d-xl-flex">
-            <a *ngIf="loggedIn" class="title-itens" routerLink="/adm">Adm</a>
+            <a *ngIf="loggedIn" class="title-itens" title="Home Adm" routerLink="/adm">Adm</a>
         </li>
 
     </ul>
 
     <div class="media text-white p-2 d-none d-lg-flex">
 
-        <div class="media-body" style="margin: 0 15px 0 15px; font-size: small;">
+        <div class="media-body" style="margin: 0 15px 0 15px; font-size: 0.9em;">
 
-            <a *ngIf="!loggedIn" class="nav-link text-reset" routerLink="/login">login</a>
+            <a *ngIf="!loggedIn" class="nav-link text-reset" title="Login" routerLink="/login">login</a>
 
             <p *ngIf="loggedIn" class="h6 m-0 text-uppercase">Fernanda</p>
 
-            <a *ngIf="loggedIn" (click)="logoutUser()" class="nav-link text-reset" style="cursor: pointer; text-decoration: none;">logout</a>
+            <a *ngIf="loggedIn"  title="Logout" (click)="logoutUser()" class="nav-link text-reset"
+                style="cursor: pointer; text-decoration: none;">logout</a>
 
         </div>
 

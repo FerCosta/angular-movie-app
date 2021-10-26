@@ -1,5 +1,5 @@
 import { DOCUMENT } from '@angular/common';
-import { Component, Inject, OnInit, Renderer2 } from '@angular/core';
+import { Component, ElementRef, Inject, OnInit, Renderer2, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-acc-bar',
@@ -9,6 +9,8 @@ import { Component, Inject, OnInit, Renderer2 } from '@angular/core';
 export class AccBarComponent implements OnInit {
 
   mode: Mode = 'light-contrast'
+  fontSize = 16
+  // @ViewChild('font', { static: true }) font: ElementRef;
 
   constructor(@Inject(DOCUMENT) private document: Document,
     private renderer: Renderer2
@@ -27,6 +29,35 @@ export class AccBarComponent implements OnInit {
 
   getFocus() {
     document.getElementById("menu").focus();
+  }
+
+  skipToContent() {
+    document.getElementById("content").focus();
+  }
+
+  // changeFont(operator) {
+  //   operator === '+' ? this.fontSize++ : this.fontSize--;
+  //    (this.font.nativeElement as HTMLBodyElement).style.fontSize = `${this.fontSize}px`;
+       
+  // }
+
+  plusFont() {
+    this.fontSize++;
+    document.body.style.fontSize=this.fontSize+"px";
+  }
+  minusFont() {
+    this.fontSize--;
+    document.body.style.fontSize=this.fontSize+"px";
+  }
+  
+
+  resetFont() {
+    // let page = document.getElementsByTagName('body');
+    // for(let i = 0; i < page.length; i++) {
+    //   page[i].style.fontSize = "16px";
+    // }
+    let body = document.getElementsByTagName('body')[0];
+    body.style.fontSize = '16px';
   }
 
 }

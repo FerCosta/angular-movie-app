@@ -1,19 +1,25 @@
-<nav class="nav nav-bar" style="font-size: medium;height: 5rem; background-color: var(--background-color);">
-    <li class="nav-item">
-        <a class="nav-link active" style="padding-left: 5rem;" aria-current="page" href="#">Skip to content</a>
+<nav class="nav nav-bar" style="font-size:1em;height: 5rem; background-color: var(--background-color);cursor: pointer;">
+    <li class="nav-item" title="Skip to content">
+        <a class="nav-link active" style="padding-left: 5rem;" aria-current="page" (click)="skipToContent()">Skip to content</a>
     </li>
-    <li>
+    <li title="Acessibility shortcuts">
         <a class="nav-link" href="#">Accessibility Shortcuts</a>
     </li>
-    <li>
+    <li title="Menu">
         <a class="nav-link" (click)="getFocus()">Menu</a>
     </li>
 
-    <li class="nav-item">
+    <li class="nav-item" title="Enable high contrast">
         <a class="nav-link" (click)="switchMode()">{{ mode === 'light-contrast' ? 'Activate High contrast' : 'Deactivate High constrast' }}</a>
     </li>
-    <li class="nav-item">
-        <a class="nav-link" href="#">Plus font</a>
+    <li class="nav-item" title="Increase font">
+        <a class="nav-link" (click)="plusFont()">A+</a>
     </li>
-
+    <li class="nav-item" title="Decrease font" >
+        <a class="nav-link" (click)="minusFont()">A-</a>
+    </li>
+    <li class="nav-item" title="Default font size">
+        <a class="nav-link" (click)="resetFont()">A</a>
+    </li>
+    
 </nav>

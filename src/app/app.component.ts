@@ -1,5 +1,5 @@
 import { DOCUMENT } from '@angular/common';
-import { Component, Inject, OnInit, Renderer2 } from '@angular/core';
+import { Component, ElementRef, Inject, OnInit, Renderer2, ViewChild} from '@angular/core';
 import { PRIMARY_OUTLET } from '@angular/router';
 
 
@@ -10,15 +10,11 @@ import { PRIMARY_OUTLET } from '@angular/router';
 })
 export class AppComponent{
   
-  
-
   constructor() { }
 
   ngOnInit(): void {
    
   }
-
- 
 
 }
 

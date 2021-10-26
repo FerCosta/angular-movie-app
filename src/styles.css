@@ -3,85 +3,74 @@
     flex-wrap: wrap;
 }
 
-/* app-movies-list-item{
-    display: flex;
-    width: 200px;
-    border-radius: 10px;
-    overflow: hidden;
-    margin: 20px 0 0 20px;
-} */
-
 .card[_ngcontent-pvn-c59] {
     border: var(--card-border) !important;
-    border-radius: 10px;
-    
+    border-radius: 10px;  
 }
 
 
 .input {
-    font-size: medium;
+    font-size:2em;
 }
 
 .input-group-prepend span{
-width: 50px;
-height: 100%;
-background-color: #FFC312;
-color: black;
-border:0 !important;
+    width: 50px;
+    height: 100%;
+    background-color: #FFC312;
+    color: black;
+    border:0 !important;
 }
     
     
 input:focus{
-outline: 0 0 0 0  !important;
-box-shadow: 0 0 0 0 !important;
-
+    outline: 0 0 0 0  !important;
+    box-shadow: 0 0 0 0 !important;
 }
         
 .login_btn{
-color: var(--text-color);
-background-color: var(--button-color);
-width: 100px;
-float: right;
-margin-top: 35px;
+    color: var(--text-color);
+    background-color: var(--button-color);
+    width: 100px;
+    float: right;
+    margin-top: 35px;
 }
 
 .login_btn:hover{
-color: black;
-background-color: var(--button-hover);
+    color: black;
+    background-color: var(--button-hover);
 }
 
 .back_btn{
-color: var(--text-color);
-background-color: var(--button-color);
-width: 100px;
-float: right;
-margin-top: 35px;
-margin-right: 10px;
+    color: var(--text-color);
+    background-color: var(--button-color);
+    width: 100px;
+    float: right;
+    margin-top: 35px;
+    margin-right: 10px;
 }
 
 .back_btn:hover{
-color: black;
-background-color: var(--button-hover);
+    color: black;
+    background-color: var(--button-hover);
 }
 
 .links{
-color: var(--link-color);
+    color: var(--link-color);
 
 }
 
 .links a{
-margin-left: 4px;
-/* color: var(--link-color); */
-color: var(--text-color);
+    margin-left: 4px;
+    /* color: var(--link-color); */
+    color: var(--text-color);
 }
 
 .nav-link, h5,h6,p,h3, th, td {
-    color: var(--text-color);
-  
+    color: var(--text-color); 
 }
 
 h6, th, td {
-    font-size: medium;
+    font-size: 1em;
 }
 
 h6:hover {
@@ -93,7 +82,14 @@ h6:hover {
     color: var(--text-color);
 }
 
-.form-control:focus{
+/* .form-control:focus{
+    font-size: 1.3rem;
+    color:var(--text-color);
+} */
+
+.form-control:focus {
+    background-color: var(--background-color);
+    border: var(--link-border);
     font-size: 1.3rem;
     color:var(--text-color);
 }
@@ -104,7 +100,7 @@ h6:hover {
 }
 
 .card-body, img {
-border: var(--card-border);
+    border: var(--card-border);
 }
 
 .nav-link:hover, .btn-danger:hover, .btn-primary:hover{
@@ -124,8 +120,7 @@ border: var(--card-border);
 .title-itens:hover {   
     color: var(--link-color);
     background-color: #1a1a1a;
-    border: var(--link-border);
-   
+    border: var(--link-border); 
 }
 
 .container {
@@ -136,21 +131,15 @@ section {
     border: var(--card-border) !important;
 }
 
-.form-control:focus {
-    background-color: var(--background-color);
-    border: var(--link-border);
-}
-
 .body {
     /* background-image: url('https://getwallpapers.com/wallpaper/full/b/4/8/185436.jpg'); */
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
     overflow-y: hidden ;   
-    
 }
 
-body, .body, .card, .container,  input, icon{
+body, .body, .card, .container,  input, icon {
     background-color: var(--background-color); 
 }
 
@@ -176,8 +165,7 @@ body, .body, .card, .container,  input, icon{
     --card-border: 1px solid white;
     --link-border: 1px solid #ff0;
     --btn-edit: white;
-    --btn-delete: white;
-    
+    --btn-delete: white; 
 
 } 
 
@@ -186,7 +174,7 @@ body, .body, .card, .container,  input, icon{
 }
 
 .btn-primary {
-border-color: var(--btn-edit);
+    border-color: var(--btn-edit);
 }
 
 .btn-danger {
@@ -214,23 +202,62 @@ border-color: var(--btn-edit);
     width: 127px;
     float: right;
     margin: 35px 53px 0 0;
-    font-size: small;
+    /* font-size: small; */
+    font-size:1em;
     border: var(--card-border);
-    }
+}
     
-    .login_btn:hover, .back_btn:hover{
+.login_btn:hover, .back_btn:hover{
     color: var(--link-color);
     background-color: var(--icon-bg);
     border: var(--link-border);
-    }
+}
     
-    .back_btn{
-        color: var(--text-color);
-        background-color: var(--button-color);
-        border: var(--card-border);
-        width: 127px;
-        float: right;
-        margin-top: 35px;
-        margin-right: 10px;
-        font-size: small;
-        }
+.back_btn{
+    color: var(--text-color);
+    background-color: var(--button-color);
+    border: var(--card-border);
+    width: 127px;
+    float: right;
+    margin-top: 35px;
+    margin-right: 10px;
+    /* font-size: small; */
+    font-size:1em;
+}
+
+body {
+    font-size:16px;
+    /* font-size: 2em; */
+}
+
+h1 {
+    font-size: 3em;
+}
+
+h3 {
+font-size: 1em;
+}
+
+h2, h4, h5, h6{
+    font-size:1em!important;
+}
+
+h2 {
+    font-size: 1em;
+}
+
+p {
+    font-size:1em;
+}
+
+.nav>li>a  {
+    font-size: 1em!important;
+}
+
+input {
+    font-size: 1em!important;
+}
+
+input::placeholder {
+    font-size: 1em!important;
+}

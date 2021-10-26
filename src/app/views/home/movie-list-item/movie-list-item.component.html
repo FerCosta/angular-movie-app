@@ -8,7 +8,7 @@
 
   <div class="col-md-3" style="margin-top: 3%" *ngFor="let m of movie | movieFilter: search">
 
-    <div class="card" style="width: 25rem;">
+  <div class="card" id="content" tabindex="0" style="width: 25rem;">
       <img src={{m.image}} class="card-img-top" alt={{m.title}}>
 
       <div class="card-body">
@@ -18,4 +18,6 @@
       </div>
     </div>
   </div>
+
+
 </div>
