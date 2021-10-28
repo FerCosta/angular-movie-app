@@ -4,8 +4,6 @@
         <div class="d-flex justify-content-center h-100">
 
             <div class="card">
-
-
                 <div class="card-body">
                     <h2 id="content" tabindex="0" style="color: azure; margin: 20px 0 40px 0;">Genre Registration</h2>
                     <form>
@@ -15,11 +13,7 @@
 
                         <div class="input-group form-group">
                             <input type="text" class="form-control" [(ngModel)]="genre.language.languageId" placeholder="Language" name="Language">
-                        </div>
-                        <div class="input-group form-group">
-                            <input type="text" class="form-control" [(ngModel)]="genre.active" placeholder="Active" name="Active">
-                        </div>
-                       
+                        </div>                       
 
                         <div class="form-group">
                             <input type="submit" value="Save" class="btn float-right login_btn" (click)="createGenre()" routerLink="/adm/genre">

@@ -10,6 +10,12 @@ export class AccBarComponent implements OnInit {
 
   mode: Mode = 'light-contrast'
   fontSize = 16
+  maxFontSize = 20
+  minFontSize = 12
+  // fontSizeStorage: Storage = localStorage
+  // fontSizeName = 'fontSize'
+  // setFontSize = (fontSize) => this.fontSizeStorage.setItem(this.fontSizeName, fontSize)
+ 
   // @ViewChild('font', { static: true }) font: ElementRef;
 
   constructor(@Inject(DOCUMENT) private document: Document,
@@ -42,12 +48,17 @@ export class AccBarComponent implements OnInit {
   // }
 
   plusFont() {
-    this.fontSize++;
-    document.body.style.fontSize=this.fontSize+"px";
+    if(this.fontSize < this.maxFontSize) {
+      this.fontSize++;
+      document.body.style.fontSize=this.fontSize+"px";
+    }
   }
+
   minusFont() {
-    this.fontSize--;
-    document.body.style.fontSize=this.fontSize+"px";
+    if(this.fontSize > this.minFontSize) {
+      this.fontSize--;
+      document.body.style.fontSize=this.fontSize+"px";
+    }
   }
   
 
